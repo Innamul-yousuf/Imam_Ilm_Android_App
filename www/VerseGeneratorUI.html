@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Verse Finder</title>
+    <link rel="stylesheet" href="css/CssVerseGenerator.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+            }
+        }
+    </script>
+    <script type="module" src="js/VerseGeneratorUI.js"></script>
+</head>
+<body>
+    
+
+
+    <div class="container container d-flex flex-column justify-content-center align-items-center">
+        <h1 class="text-center mb-4">Imam-Ilm's Quran Verse Suggestion</h1>
+       
+        <div class="button-container align-middle">
+            <button class="btn btn-custom custom-yellow-button" onclick="getQuranVerse('happy')">Happy</button>
+            <button class="btn btn-custom custom-yellow-button" onclick="getQuranVerse('sad')">Sad</button>
+            <button class="btn btn-custom custom-yellow-button" onclick="getQuranVerse('lonely')">Lonely</button>
+            <button class="btn btn-custom custom-yellow-button" onclick="getQuranVerse('angry')">Angry</button>
+            <button class="btn btn-custom custom-yellow-button" onclick="getQuranVerse('thankful')">Thankful</button>
+            <button class="btn btn-custom custom-yellow-button" onclick="getQuranVerse('anxious')">Anxious</button>
+            <button class="btn btn-custom custom-yellow-button btn-full" onclick="getQuranVerse('Randomly')">Random</button>
+     
+     </div>
+       </div>
+
+        <div id="response" class="text-center response-box"></div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #333;
+  }
+  
+  .container {
+    background: #0d0f2e;
+    padding: 30px;
+    height: 100vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imam-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px #6105ad;
+
+  }
+  .custom-black-button {
+    border-width: 3px;
+    background-color: rgb(63, 1, 80);
+
+  border-color: rgb(98, 255, 255);
+    color: white;
+    
+}
+.custom-white-button {
+            background-color: white;
+            color: #0d0f2e;
+            border: 2px solid white;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.219); 
+
+}
+.custom-white-button:hover {
+  background-color: #0d0f2e;
+  color: white;
+  border: 2px solid #0d0f2e;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.custom-white-button:active {
+  background-color: #0d0f2e;
+  color: white;
+  border: 2px solid #0d0f2e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+}
+ 
+.custom-white2-button {
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset;
+  border-width: 3px;
+  border-radius: 10px;
+  border-color: rgb(203, 158, 255);
+  color: rgb(0, 0, 0);
+  box-shadow: 0 4px 8px rgba(122, 184, 255, 0.2);
+
+}
+  .intro-box {
+    background: #f2c335;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    padding: 10px;
+    border-width: 10px;
+    border-color: aquamarine;
+    box-shadow: 0 4px 8px rgba(28, 2, 39, 0.308);
+    
+  }
+  
+  .btn-menu {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  

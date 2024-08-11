@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/QuizApp.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100">
+        <h1 class="text-center mb-4">Quiz with Imam</h1>
+        <div class="d-inline-flex align-items-center">
+
+        <button class="btn custom-white-button mb-3" onclick="getNextQuestion()">Generate Next Question</button>
+        <div class="points-box mb-3 ml-3">
+            <span id="points">0</span>/1000
+        </div>
+        
+          </div>
+        <div class="question-box" id="question-box">
+            <p id="question">Loading question...</p>
+        </div>
+        <div class="options row">
+            <button class="btn custom-yellow-button col-md-5 m-2 option" id="optionA" onclick="submitAnswer('a')">A</button>
+            <button class="btn custom-yellow-button col-md-5 m-2 option" id="optionB" onclick="submitAnswer('b')">B</button>
+            <button class="btn custom-yellow-button col-md-5 m-2 option" id="optionC" onclick="submitAnswer('c')">C</button>
+            <button class="btn custom-yellow-button col-md-5 m-2 option" id="optionD" onclick="submitAnswer('d')">D</button>
+        </div>
+        <div id="response" class="response-box"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="module" src="js/QuizApp.js"></script>
+</body>
+</html>
