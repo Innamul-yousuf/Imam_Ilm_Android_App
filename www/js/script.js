@@ -1,81 +1,8 @@
-// function sendMessage() {
-//     var messageInput = document.getElementById('messageInput');
-//     var message = messageInput.value;
-
-//     if (message.trim() !== '') {
-//         var chatBody = document.getElementById('chatBody');
-
-//         var messageElement = document.createElement('div');
-//         messageElement.classList.add('message', 'sent');
-
-//         var messageText = document.createElement('p');
-//         messageText.textContent = message;
-//         messageElement.appendChild(messageText);
-
-//         var messageTime = document.createElement('span');
-//         messageTime.classList.add('time');
-//         messageTime.textContent = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-//         messageElement.appendChild(messageTime);
-
-//         chatBody.appendChild(messageElement);
-//         chatBody.scrollTop = chatBody.scrollHeight;
-
-//         messageInput.value = '';
-//     }
-// }
-
-
-
-// // Simulated AI responses
-// var aiResponses = [
-//     "Hello! How can I help you?",
-//     "Sure, what do you need assistance with?",
-//     "I'm here to assist you.",
-//     "Please provide more details.",
-//     "That's interesting. Tell me more."
-// ];
-
-// function sendMessage() {
-//     var messageInput = document.getElementById('messageInput');
-//     var message = messageInput.value.trim();
-
-//     if (message !== '') {
-//         appendMessage('sent', message);
-
-//         // Simulate AI response after a short delay
-//         setTimeout(function() {
-//             var randomIndex = Math.floor(Math.random() * aiResponses.length);
-//             var aiMessage = aiResponses[randomIndex];
-//             appendMessage('received', aiMessage);
-//         }, 1000);
-
-//         messageInput.value = '';
-//     }
-// }
-
-// function appendMessage(type, message) {
-//     var chatBody = document.getElementById('chatBody');
-
-//     var messageElement = document.createElement('div');
-//     messageElement.classList.add('message', type);
-
-//     var messageText = document.createElement('p');
-//     messageText.textContent = message;
-//     messageElement.appendChild(messageText);
-
-//     var messageTime = document.createElement('span');
-//     messageTime.classList.add('time');
-//     messageTime.textContent = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-//     messageElement.appendChild(messageTime);
-
-//     chatBody.appendChild(messageElement);
-//     chatBody.scrollTop = chatBody.scrollHeight;
-// }
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 // Replace with your actual API key
-const API_KEY = "AIzaSyCObxtlyDEDrzupiBXBcGZKz7u2az8zX_M";
+const API_KEY = "XX";
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
