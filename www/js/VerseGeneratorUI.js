@@ -156,7 +156,7 @@ initializeModel();
 
 function formatResponseText(text) {
   const arabicRegex = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB70-\uFBFF\uFE70-\uFEFF]+/g;
-
+//AIzaSyCObxtlyDEDrzupiBXBcGZKz7u2az8zX_M
   return text
         .replace(arabicRegex, '<b>$&</b>') // Bold Arabic text
       .replace(/<b>Arabic:<\/b>/g, '<b>Arabic:</b><br>')
